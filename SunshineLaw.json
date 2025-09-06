@@ -1,0 +1,370 @@
+[
+ {
+    "id":"_meta",
+    "name":"Sunshine Law",
+    "author":"Henry M",
+    "hideTitle": true,
+    "logo":"https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_Logo.png?raw=true",
+    "almanac":"https:\/\/www.bloodstar.xyz\/p\/hdm\/SunshineLaw\/almanac.html",
+    "background": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3277616.jpg&f=1&nofb=1&ipt=35a678ca1da2611bc9b22827029f58184465d30366d821fd01c6455841ac8666",
+    "firstNight": ["dusk", "SSL_illegal","SSL_mole","SSL_doubleagent","minioninfo","demoninfo","SSL_deaagent","SSL_itarenforcer","SSL_mercenary","SSL_kingpin","SSL_localjournalist","SSL_socialite","SSL_Propagandist","SSL_informant", "SSL_sigintanalyst","SSL_hitman","SSL_fbianalyst","dawn"],
+    "otherNight": ["dusk", "SSL_deaagent", "SSL_policeofficer","SSL_icbmofficer","SSL_itarenforcer","SSL_kingpin","SSL_spymaster","SSL_volkspolizei","SSL_agitator","SSL_illegal","SSL_terrorist","SSL_mole","SSL_Propagandist","SSL_informant", "SSL_sigintanalyst","SSL_hitman","SSL_doubleagent","SSL_fbianalyst","dawn"]
+ },
+ 
+ {
+     "id":"SSL_localjournalist",
+     "name":"Local Journalist",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"You start knowing 1 not in play character of each type.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_localjournalist.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_localjournalist2.png?raw=true"],
+     "flavor":"Extra! Extra! Famous singer suddenly moves to London, no one knows why!",
+     "firstNightReminder":"Show the character token of one not in play Townsfolk, Outsider, Minion, and Demon."
+ },
+ 
+ {
+     "id":"SSL_socialite",
+     "name":"Socialite",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"You start knowing one of two players is a particular character. While that character is alive, you cannot die at night.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_socialite.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_socialite2.png?raw=true"],
+     "flavor":"You don't scare me, do you know the connections I have? I am untouchable.",
+     "reminders":["Connection","False"],
+     "firstNightReminder":"Show the *CONNECTION* character token, point to both *CONNECTION* and *FALSE*."    
+ },
+ 
+ {
+     "id":"SSL_informant",
+     "name":"Informant",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night, learn one good player. The demon knows you are in play and guesses each night. If the demon picks you, you are poisoned.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_informant.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_informant2.png?raw=true"],
+     "flavor":"It is only a matter of time before they find me, I will pass on what I can before that.",
+     "reminders":["Poisoned"],
+     "firstNightReminder":"Point to a good player. The Demon chooses a player. :reminder:",
+     "otherNightReminder":"Point to a good player. The Demon chooses a player. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_fbianalyst",
+     "name":"FBI Analyst",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night you learn how many players switched character or alignment since dawn.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_fbianalyst.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_fbianalyst2.png?raw=true"],
+     "flavor":"For the last six months, he’s gone to Harvard and Berkeley. I’m betting he can get a passport.",
+     "reminders":["Switch","Switch","Switch","Switch","Switch"],
+     "firstNightReminder":"Give a finger signal.",
+     "otherNightReminder":"Give a finger singal."
+ },
+ 
+ {
+     "id":"SSL_deaagent",
+     "name":"DEA Agent",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night, choose a player: they are sober & healthy until dusk. You learn the character the Kingpin picked last. If the Kingpin picks you, they die.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_deaagent.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_deaagent2.png?raw=true"],
+     "flavor":"It's Easy Money - 'Til We Catch You.",
+     "reminders":["Sober and Healthy","Kingpin Pick"],
+     "firstNightReminder":"The DEA Agent chooses a player. :reminder:",
+     "otherNightReminder":"Show the character token of the Kingpin's most recent *POISONED*. The DEA Agent chooses a player. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_itarenforcer",
+     "name":"ITAR Enforcer",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night, pick a character different to last night: that character, is drunk until dawn. Chosen opposing players learn who you are.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_itarenforcer.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_itarenforcer2.png?raw=true"],
+     "flavor":"If we cut off the supply to the Russians, their operations will grind to a halt.",
+     "reminders":["Chosen"],
+     "firstNightReminder":"The ITAR Enforcer picks a character. :reminder: If that character is in play: Wake that character. Show the *THIS CHARACTER SELECTED YOU* & ITAR Enforcer tokens. Point to the ITAR Enforcer.",
+     "otherNightReminder":"The ITAR Enforcer picks a character. :reminder: If that character is in play: Wake that character. Show the *THIS CHARACTER SELECTED YOU* & ITAR Enforcer tokens. Point to the ITAR Enforcer."
+ },
+ 
+ {
+     "id":"SSL_sigintanalyst",
+     "name":"SIGINT Analyst",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night, choose an alive player: you learn the distance to the nearest evil player.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_sigintanalyst.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_sigintanalyst2.png?raw=true"],
+     "flavor":"The signal is much stronger over here, there must be a transmission source nearby.",
+     "firstNightReminder":"The SIGINT Analyst chooses a player. Give a finger signal.",
+     "otherNightReminder":"The SIGINT Analyst chooses a player. Give a finger signal."
+ },
+ 
+ {
+     "id":"SSL_policeofficer",
+     "name":"Police Officer",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night* choose a player: They are safe from evil players tonight. If you choose the Terrorist, anyone kidnapped will be released.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_policeofficer.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_policeofficer2.png?raw=true"],
+     "flavor":"Treating victims with compassion is just as important as catching the criminals. They need to feel heard.",
+     "reminders":["Safe"],
+     "otherNightReminder":"The Police Officer chooses a player. :reminder: If the Police Officer chose the Terrorist: remove the *KIDNAPPED* token. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_doubleagent",
+     "name":"Double Agent",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night*, you may change alignment, if you do, a player might die. Demons think you are a Minion, Minions think you are a Demon.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_doubleagent.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_doubleagent2.png?raw=true"],
+     "flavor":"I could assure you that I am definitely not disloyal to the cause, but then I might be not be being totally honest.",
+     "reminders":["Dead"],
+     "firstNightReminder":"During Minion info, show the Minions the Double Agent as a Demon. During Demon info, show the Double Agent as a Minion.",
+     "otherNightReminder":"The Double Agent might say yes. If they do, change their alignment and you may kill a player."
+ },
+ 
+ {
+     "id":"SSL_icbmofficer",
+     "name":"ICBM Officer",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"Each night*, if the there is more than 1 extra evil player, choose 2 living players: Chosen evil players die. You are sober & healthy.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_icbmofficer.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_icbmofficer2.png?raw=true"],
+     "flavor":"We are go for launch. Awaiting final confirmation.",
+     "reminders":["Dead","Dead"],
+     "otherNightReminder":"If there are 2 or more extra evil players, the ICBM Officer chooses 2 players. :reminder: :reminder:"
+ },
+ 
+ {
+     "id":"SSL_hitman",
+     "name":"Hitman",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"One per game at night, pick a player: They learn that you picked them. If you picked an opposing player last night, they die.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_hitman.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_hitman2.png?raw=true"],
+     "flavor":"Target neutralized.",
+     "reminders":["Marked","No Ability"],
+     "firstNightReminder":"The Hitman might choose a player. :reminder: If that player is evil, wake them and show them the *THIS PLAYER SELECTED YOU* & Hitman tokens.",
+     "otherNightReminder":"A player with the *MARKED* token dies. :reminder: :reminder: If no character has the marked token, the Hitman might choose a player. If the Hitman chose an evil player, wake them and show the *THIS PLAYER SELECTED YOU* and *Hitman* tokens. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_celebrity",
+     "name":"Celebrity",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"If you are killed by an evil player, all minions are drunk for 2 nights & 2 days.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_celebrity.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_celebrity2.png?raw=true"],
+     "flavor":"MIAMI, ARE YOU READY TO PARTY?!",
+     "reminders":["Drunk 1","Drunk 2"]
+ },
+ 
+ {
+     "id":"SSL_ciaofficer",
+     "name":"CIA Officer",
+     "edition": "SSL",
+     "team":"townsfolk",
+     "ability":"The first time an opposing player targets you, that player is made drunk until dusk and you gain their ability until dusk.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_ciaofficer.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_ciaofficer2.png?raw=true"],
+     "flavor":"Perhaps you can take this package elsewhere, and we can keep this incident between us.",
+     "reminders":["CIA Asset","No Ability"]
+ },
+ 
+ {
+     "id":"SSL_mercenary",
+     "name":"Mercenary",
+     "edition": "SSL",
+     "team":"outsider",
+     "ability":"If you vote for & execute your target, you switch to the winning team at the end of the game.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_mercenary.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_mercenary2.png?raw=true"],
+     "flavor":"If violence wasn't your last resort, you failed to resort to enough of it.",
+     "reminders":["Target"],
+     "firstNightReminder":"Point to the *TARGET* player"
+ },
+ 
+ {
+     "id":"SSL_vip",
+     "name":"VIP",
+     "edition": "SSL",
+     "team":"outsider",
+     "ability":"When you die, publically guess your 2 neighbour's characters, if both are incorrect, your team looses.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_vip.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_vip2.png?raw=true"],
+     "flavor":"At all times I am protected by my bodyguards; Ben Hawkins and...what was your name again?."
+ },
+ 
+ {
+     "id":"SSL_chineseconsul",
+     "name":"Chinese Consul",
+     "edition": "SSL",
+     "team":"outsider",
+     "ability":"When you are nominated, you become the opposite alignment of the nominator, you do not learn your alignment.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_chineseconsul.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_chineseconsul2.png?raw=true"],
+     "flavor":"Keep a cool head and maintain a low profile. Never take the lead - but aim to do something big."
+ },
+ 
+ {
+     "id":"SSL_usefulidiot",
+     "name":"Useful Idiot",
+     "edition": "SSL",
+     "team":"outsider",
+     "ability":"You are \"mad\" that one of your neighbours is evil, otherwise you or either of your neighbours might die.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_usefulidiot.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_usefulidiot2.png?raw=true"],
+     "flavor":"I have followed exactly the same line the whole of my adult life. The fight against Fascism and the fight against imperialism were fundamentally the same fight.",
+     "remindersGlobal":["Is Useful Idiot"],
+     "special": [
+         {
+             "type": "reveal",
+             "name": "replace-character"
+         } 
+     ]
+ },
+ 
+ {
+     "id":"SSL_mole",
+     "name":"Mole",
+     "edition": "SSL",
+     "team":"minion",
+     "ability":"You recieve three bluffs. Once per game, choose a good character: gain their ability if they are not in play. You might register as good.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_mole.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_mole2.png?raw=true"],
+     "flavor":"The betrayal of trust carries a heavy taboo.",
+     "remindersGlobal":["Is Mole"],
+     "firstNightReminder":"Show 3 bluffs, the Mole might choose a good character. :reminder:",
+     "otherNightReminder":"the Mole might choose a good character. :reminder:",
+     "special": [
+         {
+             "type": "reveal",
+             "name": "replace-character"
+         } 
+     ]
+ },
+ 
+ {
+     "id":"SSL_propagandist",
+     "name":"Propagandist",
+     "edition": "SSL",
+     "team":"minion",
+     "ability":"Each night choose a player: they become a Useful Idiot until dusk. The first outsider you pick becomes your alignment. [+1 Outsider]",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_propagandist.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_propagandist2.png?raw=true"],
+     "flavor":"It would not be impossible to prove with sufficient repetition and a psychological understanding of the people concerned that a square is in fact a circle. They are mere words, and words can be molded until they clothe ideas and disguise.",
+     "firstNightReminder":"The Propagandist chooses a player. If they chose an outsider (once only), switch the outsider to evil. :reminder: Wake the target and show them the *YOU ARE* token & give them a thumbs down. If they do not choose an outsider, wake their target and show them the :YOU ARE: and Useful Idiot tokens. :reminder:",
+     "otherNightReminder":"Wake the *IS USEFUL IDIOT* and show them the *YOU ARE* token & their original character token. :reminder: The Propagandist chooses a player. If they chose an outsider (once only), switch the outsider to evil. :reminder: Wake the target and show them the *YOU ARE* token & give them a thumbs down. If they do not choose an outsider, wake their target and show them the *YOU ARE* and Useful Idiot tokens. :reminder:",
+     "reminders":["Outsider Chosen"],
+     "setup":true
+ },
+    
+ {
+     "id":"SSL_kingpin",
+     "name":"Kingpin",
+     "edition": "SSL",
+     "team":"minion",
+     "ability":"Each night, you may choose a player: they are poisoned. If you pick a demon, you die. You and the evil team do not learn eachother.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_kingpin.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_kingpin2.png?raw=true"],
+     "reminders":["Dead","Poisoned","Poisoned","Poisoned","Poisoned","Poisoned","Poisoned","Poisoned","Poisoned","Poisoned"],
+     "flavor":"I'm a decent man who exports flowers.",
+     "firstNightReminder":"The Kingpin choose a player. :reminder: If the Kingpin chose the Demon, they die. :reminder:",
+     "otherNightReminder":"The Kingpin choose a player. :reminder: If the Kingpin chose the Demon, they die. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_terrorist",
+     "name":"Terrorist",
+     "edition": "SSL",
+     "team":"minion",
+     "ability":"Each night*, You may kill, release, or do nothing to a kidnapped player. If no player is kidnapped, choose a player: unless the target guesses you, they will be kidnapped.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_terrorist.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_terrorist2.png?raw=true"],
+     "flavor":"After 43 days we have ended his pitiful and corrupt existence. His death is meaningless to our pain and our rage, the struggle has only begun. Freedom through armed, anti-imperialist struggle.",
+     "reminders":["Kidnapped","Dead"],
+     "otherNightReminder":"If a player is currently *KIDNAPPED*, the Terrorist sends *YES*, *NO*, or 0. If *YES*, *KIDNAPPED* dies :reminder:, if *NO* remove *KIDNAPPED* :reminder:, if 0, do nothing. Otherwise, the Terrorist might choose a player. If they do, wake the target and show the *THIS CHARACTER SELECTED YOU* and Terrorist tokens, they will pick a player. :reminder: Kidnapped players do not wake to use their ability.",
+     "special": [
+         {
+             "type": "signal",
+             "name": "player",
+             "value": "Kill"
+         },
+         {
+             "type": "signal",
+             "name": "player",
+             "value": "Release"
+         },
+         {
+             "type": "signal",
+             "name": "player",
+             "value": "Hold"
+         }
+     ]
+ },
+
+ {
+     "id":"SSL_spymaster",
+     "name":"Spymaster",
+     "edition": "SSL",
+     "team":"demon",
+     "ability":"Each night*, choose a player: they die. You may choose to open your eyes at night.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_spymaster.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_spymaster2.png?raw=true"],
+     "flavor": "Доброе утро Mr Johnson, could you explain to me why a simple journalist would require all that specialised radio equipment?",
+     "reminders":["Dead"],
+     "otherNightReminder":"The Spymaster chooses a player:reminder:",
+     "special": [
+         {
+             "type": "player",
+             "name": "open-eyes",
+             "time": "night"
+         }
+     ]
+ },
+
+ {
+     "id":"SSL_volkspolizei",
+     "name":"Volkspolizei",
+     "edition": "SSL",
+     "team":"demon",
+     "ability":"Each night*, choose a player: they die. Once per game, the Volkspolizei may choose a second player. The second player can kill you and become an evil Volkspolizei, or they might be executed tomorrow.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_volkspolizei.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_volkspolizei2.png?raw=true"],
+     "flavor": "Ve vould hate for zeze tapes to be made publik, perhaps ein Harrangement kould be made, ja?",
+     "reminders":["Dead", "Once", "Refused"],
+     "otherNightReminder":"The Volkspolizei chooses a player. :reminder: They might then choose a second character, wake the second target and show the *THIS CHARACTER SELECTED YOU* the Volkspolizei tokens. If the target says *YES*, show them the *YOU ARE* and Volkspolizei & give them a thumbs down. :reminder:"
+ },
+ 
+ {
+     "id":"SSL_agitator",
+     "name":"Agitator",
+     "edition": "SSL",
+     "team":"demon",
+     "ability":"Each night*, choose 2 players: the first dies, the second becomes evil until dusk. The first time an Agitator dies, if there is an evil outsider, an evil outsider becomes an evil Agitator.[-1 Minion, +1 Outsider, all Useful Idiots are evil]",
+     "flavor":"El pueblo cubano vencerá a los imperialistas. ¡Viva la revolución!",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_agitator.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_agitator2.png?raw=true"],
+     "reminders":["Dead", "Evil"],
+     "otherNightReminder":"The Agitator chooses 2 players. :reminder: :reminder: If the second player was good, wake them show the *YOU ARE* token and give them a thumbs down. If a player is now good, wake them show the *YOU ARE* token and give them a thumbs up.",
+     "setup":true
+ },
+ 
+ {
+     "id":"SSL_illegal",
+     "name":"Illegal",
+     "edition": "SSL",
+     "team":"demon",
+     "ability":"Each night*, choose a player: they die. You get only 1 bluff. You gain your bluff's ability and might register as them.",
+     "image":["https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_illegal.png?raw=true","https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_illegal2.png?raw=true"],
+     "flavor":"I had a near death experience once; On a family trip to California in 1964. I was swimming at a beach and I nearly drowned.",
+     "remindersGlobal":["Is Illegal", "Dead", "?", "?", "?", "?", "?"],
+     "firstNightReminder":"Show 1 bluff, swap that character with with Illegal :reminder:",
+     "otherNightReminder":"The illegal chooses a player: they die. :reminder:",
+     "special":[
+         {
+             "type": "reveal",
+             "name": "replace-character"
+         } 
+     ]
+ },
+    
+ {
+     "id":"SSL_kidnapper",
+     "name":"Kidnapper",
+     "edition": "SSL",
+     "team":"fabled",
+     "ability":"Player learn when they are kidnapped or freed. Kidnapped players are unable to use their ability.",
+     "image":"https://github.com/HenryDMann/Sunshine-Law/blob/main/Characters/SSL_kidnapper.png?raw=true",
+     "flavor":"You're going to be here for a while, so get comfortable. You'll have food, water, and a place to sleep. But don't think about trying to escape. It's not possible."
+ }
+
+]
