@@ -319,7 +319,7 @@ p{
 }
 
 .nav > li.fabled {
-    background: #ffe91f;
+    background: #ffbb1f;
 }
 .nav > li.other {
     background: #333;
@@ -445,4 +445,5 @@ p{
     .nightOrder{display:block}
     .nightOrderList{margin-bottom:1rem}
 }
+
 
