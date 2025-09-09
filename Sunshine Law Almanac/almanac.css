@@ -1,6 +1,6 @@
 html,body{height:100%;font-size:16px;scroll-behavior:smooth;}
 body{
-    background:#333;
+    background:url('SSL_Background.png') no-repeat fixed center;
     color:#eee;
     font-family:Courier, monospace;
     margin:0;
@@ -50,7 +50,6 @@ ol.nav {
     position:fixed;
     height:100vh;
     z-index:1;
-    background:#333;
 }
 ol.nav > li {
     padding-left: 0.2rem;
@@ -61,10 +60,7 @@ ol.nav > li {
     text-decoration:none;
     color:#eee;
 }
-.nav a:hover{
-    text-decoration:underline;
-    box-shadow: 0 0 0.1em #333;
-}
+
 .almanac-row{
     max-width:924px;
     overflow-x: hidden;
@@ -214,7 +210,7 @@ p{
     border-color:#003fb2;
 }
 .nav > li.townsfolk {
-    background: #1f65ff55;
+    background: #1f65ff;
 }
 
 .outsider h1,
@@ -232,7 +228,7 @@ p{
     border-color:#006893;
 }
 .nav > li.outsider {
-    background: #46d5ff55;
+    background: #46d5ff;
 }
 
 .minion h1,
@@ -250,7 +246,7 @@ p{
     border-color:#9f0000;
 }
 .nav > li.minion {
-    background: #ff690055;
+    background: #ff6900;
 }
 
 .demon h1,
@@ -268,7 +264,7 @@ p{
     border-color:#940000;
 }
 .nav > li.demon {
-    background: #ce010055;
+    background: #ce0100;
 }
 
 .traveler h1,
@@ -323,7 +319,10 @@ p{
 }
 
 .nav > li.fabled {
-    background: #ffe91f55;
+    background: #ffe91f;
+}
+.nav > li.other {
+    background: #333;
 }
 
 .characterImage {
