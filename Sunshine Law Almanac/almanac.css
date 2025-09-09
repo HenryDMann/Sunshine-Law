@@ -37,8 +37,8 @@ h1, h2{font-size:2.4rem}
 h3, h4, h5, h6, h7 {font-size:1.2rem}
 hr{width:80%;border:1px solid}
 ol.nav {
-    font-family:'Roboto Condensed',sans-serif;
-    margin-left: auto
+    font-family: 'Arial Narrow', sans-serif;
+    margin-left: auto;
     flex:0 0 124px;
     font-weight: bold;
     font-size:1rem;
@@ -132,18 +132,6 @@ ol.nav > li {
   transform-origin: top right;
   opacity: 0.5;
 }
-
-.generated-by{
-  list-style:none;
-  padding:0 0 1rem 0;
-  text-align:center;
-  font-size:0.8rem;
-  flex:none;
-  font-family:'Roboto Condensed',sans-serif;
-}
-.generated-by a{
-    color:#ccf
-}
 .team{
     writing-mode:vertical-rl;
     text-orientation: upright;
@@ -166,12 +154,11 @@ p{
     width:6.4rem;
 }
 #synopsis > .page-contents{
-    font-family: 'MedievalSharp', cursive;
+    
     color:#933;
 }
 .ability{
     width:60%;
-    font-family:'Roboto Condensed',sans-serif;
     text-align:center;
 }
 .flavor{
@@ -194,19 +181,8 @@ p{
     margin-right:auto;
 }
 
-/* big letter */
-#synopsis > .page-contents > p:nth-child(1)::first-letter {
-    font-size:2rem;
-}
-.overview > p:nth-child(1)::first-letter {
-    font-family: 'MedievalSharp', cursive;
-    font-size: 5rem;
-    float:left;
-    line-height:0.7;
-    margin: 0 0.3rem 0 -0.4rem;
-}
-.overview > p:nth-child(1) {
-    min-height: 3.5rem;
+.overview > p {
+    font-weight: bold;
 }
 
 /* bullets */
@@ -215,14 +191,13 @@ p{
     margin-left:1.3rem;
 }
 .overview > p + p::before {
-    content:'•';
+    content:'-';
     font-size:1.4rem;
     position:absolute;
     line-height:0.9;
     top:0;
     left:-1.4rem;
 }
-.page::before{background-image:url('/img/paper.png');}
 
 .townsfolk h1,
 .townsfolk h2,
@@ -232,7 +207,6 @@ p{
 .townsfolk h6,
 .townsfolk .ability,
 .townsfolk .team,
-.townsfolk .overview > p:nth-child(1)::first-letter,
 .townsfolk .overview > p + p::before {
     color:#003fb2;
 }
@@ -251,7 +225,6 @@ p{
 .outsider h6,
 .outsider .ability,
 .outsider .team,
-.outsider .overview > p:nth-child(1)::first-letter,
 .outsider .overview > p + p::before {
     color:#006893;
 }
@@ -270,7 +243,6 @@ p{
 .minion h6,
 .minion .ability,
 .minion .team,
-.minion .overview > p:nth-child(1)::first-letter,
 .minion .overview > p + p::before {
     color:#9f0000;
 }
@@ -289,7 +261,6 @@ p{
 .demon h6,
 .demon .ability,
 .demon .team,
-.demon .overview > p:nth-child(1)::first-letter,
 .demon .overview > p + p::before {
     color:#940000;
 }
